@@ -1,0 +1,14 @@
+log_dir: log
+dir:
+  work: data/test_results/test_trim_read_through
+
+input_single: [data/trim_read_through/test_data/test_trim_1.fastq]
+input_paired:
+  - data/trim_read_through/test_data/test_trim_1.fastq
+  - data/trim_read_through/test_data/test_trim_2.fastq
+
+algorithm:
+  quality_format: standard
+  aligner: tophat
+  transcript_assemble: True
+  adapters: [truseq, polya]

@@ -1,0 +1,5 @@
+input: data/organisms/mouse/mouse.bam
+correct: data/bed2interval/mouse.interval
+
+annotation:
+  bed: data/organisms/mouse/mouse.bed

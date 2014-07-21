@@ -1,0 +1,10 @@
+input_split: data/split_vcf/NA12878-hydra.vcf
+correct_split:
+  - data/split_vcf/chrM_correct.vcf
+  - data/split_vcf/chr22_correct.vcf
+
+ref:
+  fasta: ../data/genomes/hg19/seq/hg19.fa
+
+program:
+  samtools: samtools

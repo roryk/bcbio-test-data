@@ -1,0 +1,5 @@
+17	dexseq_prepare_annotation.py	aggregate_gene	5410864	5440260	.	-	.	gene_id "ENSMUSG00000004945"
+17	dexseq_prepare_annotation.py	exonic_part	5410864	5411467	.	-	.	transcripts "ENSMUST00000005053"; exonic_part_number "001"; gene_id "ENSMUSG00000004945"
+17	dexseq_prepare_annotation.py	exonic_part	5433442	5433579	.	-	.	transcripts "ENSMUST00000005053"; exonic_part_number "002"; gene_id "ENSMUSG00000004945"
+17	dexseq_prepare_annotation.py	exonic_part	5439532	5439632	.	-	.	transcripts "ENSMUST00000005053"; exonic_part_number "003"; gene_id "ENSMUSG00000004945"
+17	dexseq_prepare_annotation.py	exonic_part	5440133	5440260	.	-	.	transcripts "ENSMUST00000005053"; exonic_part_number "004"; gene_id "ENSMUSG00000004945"

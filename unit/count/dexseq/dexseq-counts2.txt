@@ -1,0 +1,9 @@
+ENSMUSG00000004945:001	1519
+ENSMUSG00000004945:002	515
+ENSMUSG00000004945:003	378
+ENSMUSG00000004945:004	255
+_ambiguous	0
+_ambiguous_readpair_position	0
+_empty	0
+_lowaqual	0
+_notaligned	0
