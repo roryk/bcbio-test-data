@@ -1,0 +1,76 @@
+galaxy_config: universe_wsgi.ini
+algorithm:
+  platform: illumina
+
+# configuration algorithm changes for custom post-processing steps
+custom_algorithms:
+  variant:
+    aligner: bwa
+    recalibrate: gatk
+    snpcall: true
+    coverage_interval: "exome" # other options: genome
+  'RNA-seq':
+    aligner: tophat2
+    transcript_assemble: true
+  'Minimal':
+    aligner: ""
+# Define resources to be used for individual programs on multicore machines.
+# These can be defined specifically for memory and processor availability.
+# Distributed systems
+# - Specify usage for memory intensive programs
+# - Define cores that can be used for multicore programs.
+resources:
+  bcbio_variation:
+    dir: /usr/local/share/java/bcbio_variation
+  bcbio_coverage:
+    dir: /usr/local/share/java/bcbio_coverage
+    cores: 4
+  bowtie:
+    cores:
+  tophat:
+    cores:
+  star:
+    mem: 3g
+    cores: 4
+  bwa:
+    cores: 4
+  AlienTrimmer:
+    jvm_opts: ["-Xms750m", "-Xmx2000m"]
+    dir: /usr/local/share/java/AlienTrimmer
+  samtools:
+    cores: 4
+    memory: 1G
+  novoalign:
+    cores: 4
+    memory: 4G
+  gemini:
+    cores: 4
+  gatk:
+    cores: 2
+    dir: /usr/local/share/java/gatk
+    jvm_opts: ["-Xms750m", "-Xmx2000m"]
+  gatk-vqsr:
+    jvm_opts: ["-Xms1000m", "-Xmx2500m"]
+  picard:
+    cores: 1
+    dir: /usr/local/share/java/picard
+  snpEff:
+    dir: /usr/local/share/java/snpeff
+    jvm_opts: ["-Xms750m", "-Xmx3g"]
+  varscan:
+    dir: /usr/local/share/java/varscan
+  mutect:
+    dir: /usr/local/share/java/mutect
+  cram:
+    dir: /usr/local/share/java/cram
+  rnaseqc:
+    dir: /usr/local/share/java/RNA-SeQC
+  stampy:
+    dir: ~/install/stampy-1.0.18
+  cortex:
+    dir: ~/install/CORTEX_release_v1.0.5.14
+  vcftools:
+    dir: ~/install/vcftools_0.1.9
+  oncofuse:
+    jvm_opts: ["-Xms750m", "-Xmx2000m"]
+    dir: /usr/local/share/java/oncofuse
